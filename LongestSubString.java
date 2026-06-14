@@ -1,3 +1,6 @@
+// https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
+// T.C: O(n) S.C: O(k)
+
 import java.util.HashMap;
 
 public class LongestSubString {
