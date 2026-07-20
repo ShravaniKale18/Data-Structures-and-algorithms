@@ -47,12 +47,11 @@ public class FindTheSmallestDivisorGivenThreshold {
     }
 
     static int calculateDivisor(int[] nums, int divisor) {
-        int division = 0;
         int sum = 0;
 
         for(int num : nums) {
-            division = (num + divisor - 1) / divisor;
-            sum += division;
+            // division = (num + divisor - 1) / divisor;
+            sum += Math.ceil((double)num / (double)divisor);
         }
 
         return sum;
