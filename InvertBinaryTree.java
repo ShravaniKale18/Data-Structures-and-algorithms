@@ -26,7 +26,7 @@ class Node{
 
 public class InvertBinaryTree {
 
-    public Node invertTree(Node root) {
+    static Node invertTree(Node root) {
 
         if (root == null) {
             return null;
@@ -42,6 +42,10 @@ public class InvertBinaryTree {
         return root;
     }
     public static void main(String[] args) {
-        
+        Node root = new Node(1);
+        root.left = new Node(3);
+        root.right = new Node(2);
+
+        System.out.println(invertTree(root));
     }
 }
