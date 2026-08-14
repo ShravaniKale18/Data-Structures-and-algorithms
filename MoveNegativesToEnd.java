@@ -22,9 +22,10 @@ public class MoveNegativesToEnd {
         }
         return newArr;
     }
+
     public static void main(String[] args) {
         int[] nums = {-1, 2, -3, 2, -6, 9};
-
+        // int[] nums = {0, 1, 2, 3, 0, 6, 0};
         System.out.println(Arrays.toString(moveNegatives(nums)));
     }
 }
