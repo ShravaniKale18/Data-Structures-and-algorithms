@@ -1,5 +1,10 @@
 import java.util.*;
 
+/** 
+ * TC : O(n)
+ * SC : O(n)
+ */
+
 public class RemoveKDigits {
 
     static String removeKdigits(String num, int k) {
