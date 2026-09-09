@@ -1,5 +1,9 @@
 package Trees;
 
+/** 
+ * Time Complexity : O(N)
+ * Space Complexity : O(N)
+ */
 import java.util.*;
 
 class Node{
