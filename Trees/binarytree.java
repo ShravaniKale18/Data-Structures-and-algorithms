@@ -1,6 +1,0 @@
-package Trees;
-
-class binarytree {
-
-     
-}

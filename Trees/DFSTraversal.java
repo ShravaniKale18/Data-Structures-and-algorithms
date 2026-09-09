@@ -1,5 +1,17 @@
 package Trees;
 
+class Node{
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
 public class DFSTraversal {
 
     static void inOrderTraversal(Node head){
