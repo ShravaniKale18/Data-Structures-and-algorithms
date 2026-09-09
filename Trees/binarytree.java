@@ -1,0 +1,6 @@
+package Trees;
+
+class binarytree {
+
+     
+}
