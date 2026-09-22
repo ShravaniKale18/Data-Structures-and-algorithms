@@ -31,7 +31,7 @@ public class HeightOfBinaryTree {
 
     static int height(Node root) {
         if (root == null) {
-            return -1;
+            return 1;
         }
 
         int leftHeight = height(root.left);
