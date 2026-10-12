@@ -41,16 +41,15 @@ class VerticalOrderBinaryTreeTraversal {
 
     public static List<List<Integer>> verticalTraversal(Node root) {
 
-        TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map
-                = new TreeMap<>();
+        TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap<>();
 
-        Queue<Tuple> q = new LinkedList<>();
+        Queue<Tuple> queue = new LinkedList<>();
 
-        q.offer(new Tuple(root, 0, 0));
+        queue.offer(new Tuple(root, 0, 0));
 
-        while (!q.isEmpty()) {
+        while (!queue.isEmpty()) {
 
-            Tuple t = q.poll();
+            Tuple t = queue.poll();
 
             Node node = t.node;
             int row = t.row;
@@ -62,11 +61,11 @@ class VerticalOrderBinaryTreeTraversal {
             map.get(col).get(row).offer(node.val);
 
             if (node.left != null) {
-                q.offer(new Tuple(node.left, row + 1, col - 1));
+                queue.offer(new Tuple(node.left, row + 1, col - 1));
             }
 
             if (node.right != null) {
-                q.offer(new Tuple(node.right, row + 1, col + 1));
+                queue.offer(new Tuple(node.right, row + 1, col + 1));
             }
         }
 
