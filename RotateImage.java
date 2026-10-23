@@ -12,7 +12,6 @@ public class RotateImage {
     static int[][] rotate(int[][] matrix) {
         
         int n = matrix.length;
-        int m = matrix[0].length;
 
         int[][] rotatedMatrix = transpose(matrix);
 
