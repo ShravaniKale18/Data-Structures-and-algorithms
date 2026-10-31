@@ -1,4 +1,5 @@
 public class LongestPalindromeSubstring {
+    
     public static String longestPalindrome(String s) {
 
         String longestPalindromeLengthString = "";
