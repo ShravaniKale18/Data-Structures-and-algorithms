@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class MissingNumber {
     public static int missingNumber1(int []a, int n) {
