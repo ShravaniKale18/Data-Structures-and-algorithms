@@ -54,7 +54,8 @@ public class RowWithMaximumOnes {
      */
 
     static int[] rowAndMaximumOnes(int[][] mat) {
-        int max_cnt = - 1;
+
+        int max_cnt = -1;
         int index = -1;
         int n = mat[0].length;
 
@@ -72,14 +73,14 @@ public class RowWithMaximumOnes {
 
     static int lowerBound(int[] arr, int x) {
 
-        int low = 0;
-        int high = arr.length - 1;
         int ans = arr.length;
+        int low = 0;
+        int high = arr.length;
 
-        while (low <= high) {
+        while(low <= high) {
             int mid = low + (high - low) / 2;
 
-            if (arr[mid] >= x) {
+            if(arr[mid] >= x) {
                 ans = mid;
                 high = mid - 1;
             }else{
@@ -89,6 +90,7 @@ public class RowWithMaximumOnes {
 
         return ans;
     }
+    
     public static void main(String[] args) {
        int  mat[][] = {
         {0, 0, 0},
