@@ -90,7 +90,19 @@ public class BasicRecursionCodes {
         printArray(arr, index + 1);
     }
 
+    //print digits of a number using recursion
+    public static void printDigits(int n) {
+        if(n == 0) return;
+
+        printDigits(n / 10);
+        System.out.print(n % 10 + " ");
+    }
+
     public static void main(String[] args) {
+
+        printDigits(12345);
+        System.out.println();
+        
         int[] arr = {1, 2, 3, 4, 5};
         printArray(arr, 0);
         System.out.println();
